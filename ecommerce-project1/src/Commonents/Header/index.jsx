@@ -6,9 +6,15 @@ import Button from '@mui/material/Button';
 import { FaUser } from "react-icons/fa";
 import { BsBag } from "react-icons/bs";
 import SearchBox from "./SearchBox";
-import Navigation from "./Navigation"
+import Navigation from "./Navigation";
+import { MyContext } from "../../App";
+import { createContext, useContext } from "react";
 
 export default function Header(){
+
+    // use the created context
+    const context = useContext(MyContext);
+    
     return(
         <>
         <div className="headerWrapper">
@@ -29,7 +35,9 @@ export default function Header(){
                         </div>
 
                         <div className="col-sm-10 d-flex align-items-center part2">
-                           <CountryDropdown/>
+
+                            {/* Showing the fetch data on my countrydropdown */}
+                           { context.countryList.length !== 0 && <CountryDropdown/>}
 
                           <SearchBox/>
 

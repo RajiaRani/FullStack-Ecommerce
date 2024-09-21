@@ -17,15 +17,16 @@ body{
 ::-webkit-scrollbar-track{background-color: transparent !important;}
 
 .bg-blue{background-color: #233a95;}
+.headerWrapper{border-bottom: 1px solid rgba(0,0,0,0.1) !important; padding-bottom: 10px !important;}
 .headerWrapper .top-strip{ padding: 8px 0px;}
 .headerWrapper .top-strip p{color: #fff; font-size: 12px; font-weight: 500;}
 
 .headerWrapper .header{width: 100%; height: auto; padding: 10px 0px;}
 .headerWrapper img{width: 100%;}
 
-.headerWrapper .header .part2 .countryDropdown{width: 150px; height: 60px; min-width:150px; color: #000; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px; padding: 10px;}
-.headerWrapper .header .part2 .countryDropdown .label{ font-size: 12px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.7) !important; line-height: 16px ;}
-.headerWrapper .header .part2 .countryDropdown .name{font-size: 14px !important; color: rgba(0,0,0,0.8)!important; font-weight: 500; text-align: start; justify-content: flex-start; line-height: 16px;}
+.headerWrapper .header .part2 .countryDropdown{width: 200px; height: 60px; min-width:150px; color: #000; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px; padding: 10px;}
+.headerWrapper .header .part2 .countryDropdown .label{ font-size: 12px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.7) !important; line-height: 18px;}
+.headerWrapper .header .part2 .countryDropdown .name{font-size: 14px !important; color: rgba(0,0,0,0.7)!important; font-weight: 500; text-align: start; justify-content: flex-start; line-height: 16px; font-weight:600 !important}
 .headerWrapper .header .part2 .countryDropdown span.ml-auto svg{opacity: 0.7;}
 
  .headerSearch{width: 60%; height: 60px; background-color: #f3f4f7; padding: 10px; position: relative !important; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px;}
@@ -34,11 +35,13 @@ body{
  .headerSearch .btn svg{font-size: 20px;}
  .headerSearch input::-webkit-input-placeholder{color: rgba(0,0,0,0.6);}
 
-.locationModal .MuiPaper-elevation{ padding:30px !important; position: relative;}
+.locationModal .MuiPaper-elevation{ padding:30px !important; position: relative;} 
 .locationModal .countryList{margin-bottom: 0px !important; overflow-y: scroll !important; overflow-x: hidden !important; }
 .locationModal .countryList li{ width: 100%; list-style: none !important;}
 .locationModal .countryList li Button{ justify-content: flex-start; width: 100%; text-transform: capitalize !important;
 color: rgba(0,0,0,1.0); padding:18px !important;}
+.locationModal .countryList li Button:hover{background-color: #f1f1f1 !important;}
+.locationModal .countryList li Button.active{background-color: #efecec!important;}
 .locationModal .close_{position: absolute; top:2px !important; right:5px !important; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; color: #ea2b0f !important;}
 .locationModal .close_ svg{font-size: 22px !important;}
 
@@ -55,7 +58,7 @@ nav .allCatTab{background-color: #2bbef9; padding:20px !important; border-radius
 nav .allCatTab *{color: #fff;}
 
 nav .allCatTab:hover{background-color:#2bbef9;}
-nav .allCatTab .text{font-weight: 600 !important;}
+nav .allCatTab .text{font-weight: 600 !important; }
 nav .allCatTab .icon1 svg{font-size: 23px !important; }
 nav .allCatTab .icon2 svg{font-size: 15px !important; }
 
