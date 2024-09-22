@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './Commonents/Header';
 import { useEffect, useState, createContext } from 'react';
 import axios from 'axios';
+import Home from './Pages/Home';
 
 
 // 1st Create the MyContext
@@ -37,8 +38,9 @@ selectedCountry
    <BrowserRouter>
    <MyContext.Provider value={values}>
    <Header/>
+   <Home/>
    <Routes>
-    {/* <Route path="/" exact={true} element={<Home/>}/> */}
+    {/* <Route path="/" exact={true} element={<Home/>}/>  */}
    </Routes>
    </MyContext.Provider>
    </BrowserRouter>

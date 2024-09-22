@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css');
+
 *{
   margin: 0px;
   padding: 0px;
@@ -21,7 +24,7 @@ body{
 .headerWrapper .top-strip{ padding: 8px 0px;}
 .headerWrapper .top-strip p{color: #fff; font-size: 12px; font-weight: 500;}
 
-.headerWrapper .header{width: 100%; height: auto; padding: 10px 0px;}
+.headerWrapper .header{width: 100%; height: auto; padding:0px !important;}
 .headerWrapper img{width: 100%;}
 
 .headerWrapper .header .part2 .countryDropdown{width: 200px; height: 60px; min-width:150px; color: #000; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px; padding: 10px;}
@@ -57,6 +60,16 @@ header .part3 .cartTab .count{position: absolute !important; top: -4px !importan
 nav .allCatTab{background-color: #2bbef9; padding:20px !important; border-radius: 30px !important;}
 nav .allCatTab *{color: #fff;}
 
+nav .allCatTabWrapper{position: relative !important;}
+nav .allCatTabWrapper .sideNavbar{position: absolute; top: 119%; left: 0; border: 1px solid rgba(0,0,0,0.1); width: 100%; height:auto; padding: 15px 0px !important; 
+opacity: 0; height: 0px; transition: all 0.2s ease-in-out; visibility: hidden; z-index: 200; background-color: #fff;}
+nav .allCatTabWrapper .sideNavbar.open{height:auto; opacity: 1; visibility: inherit;}
+
+nav .allCatTabWrapper .sideNavbar ul{padding: 0px !important;}
+nav .allCatTabWrapper .sideNavbar ul li{list-style: none !important; width: 100%; padding: 0px 15px !important;}
+nav .allCatTabWrapper .sideNavbar ul li Button{width: 100%; color: #000; justify-content: flex-start;}
+nav .allCatTabWrapper .sideNavbar ul li Button:hover{background:transparent !important;}
+
 nav .allCatTab:hover{background-color:#2bbef9;}
 nav .allCatTab .text{font-weight: 600 !important; }
 nav .allCatTab .icon1 svg{font-size: 23px !important; }
@@ -65,8 +78,31 @@ nav .allCatTab .icon2 svg{font-size: 15px !important; }
 nav .navPart1{ width: 20%; flex: 0 0 20%;}
 nav .navPart2{width: 80%; flex: 0 0 80%}
 nav .navPart2  ul{margin-bottom: 0px !important;}
+nav .navPart2  ul li{ padding-bottom: 0px;}
 nav .navPart2  ul  {font-size: 18px !important;  text-transform: uppercase; display: flex; align-items: center; flex-direction: row; justify-content: space-between;}
 nav .navPart2  ul .list-inline-item .link{list-style: none !important; text-decoration:none !important; font-weight: 600; color: rgba(0,0,0,0.5) !important; min-width:200px !important; width: 200px !important; height: 100px !important;  padding:20px; border-radius: 30px;
 transition: all 0.3s ease-in-out;}
+nav .navPart2  ul .list-inline-item{position: relative !important;}
+nav .navPart2  ul li .submenu{ position: absolute; top:170% !important; left: 0 !important; display: flex; flex-direction: column; min-width: 200px !important; width: 200px !important; opacity: 0; visibility: hidden; transition: all 0.2s ease-in-out; background-color: #fff; z-index: 200;}
+nav .navPart2  ul li .submenu .sub-link{width: 100% !important; display: block !important; text-decoration: none;}
+nav .navPart2 ul li .submenu Button{display: block !important; width: 100% !important; text-align: start; border-radius: 0px !important; text-transform: capitalize !important; font-weight: 700; font-size: 19px; }
+
+nav .navPart2  ul li:hover .submenu{ opacity: 1; visibility:inherit; cursor: pointer; top:100% !important;}
+
 nav .navPart2  ul .list-inline-item .link:hover{ background-color: #f0faff; color: #2bbef9;}
 nav .navPart2  ul list svg{ font-size: 18px !important;}
+
+
+.homeBannerSection {position: relative; overflow: hidden;}
+.homeBannerSection * {outline: none !important;}
+.homeBannerSection .slick-prev,
+.homeBannerSection .slick-next {position: absolute; top: 45%; z-index: 100; display: flex; align-items: center; justify-content: center; min-width: 40px !important;
+  width: 40px !important; height: 40px !important; border-radius: 50%; background-color: rgba(0, 0, 0, 0.7) !important; z-index: 200;}
+
+.homeBannerSection .slick-prev {left: 10px; /* Adjust as needed */}
+
+.homeBannerSection .slick-next { right: 10px; /* Adjust as needed */}
+
+.homeBannerSection .slick-prev:before,
+.homeBannerSection .slick-next:before { color: white; font-size: 20px; /* Adjust size as needed */}
+

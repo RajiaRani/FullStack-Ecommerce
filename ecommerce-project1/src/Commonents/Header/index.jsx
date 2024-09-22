@@ -14,7 +14,7 @@ export default function Header(){
 
     // use the created context
     const context = useContext(MyContext);
-    
+
     return(
         <>
         <div className="headerWrapper">
@@ -40,8 +40,7 @@ export default function Header(){
                            { context.countryList.length !== 0 && <CountryDropdown/>}
 
                           <SearchBox/>
-
-
+                          
                            <div className="part3 m-auto d-flex ">
                             <Button className="user-icon me-3"><FaUser /></Button>
                             <div className="m-auto cartTab d-flex align-items-center">
