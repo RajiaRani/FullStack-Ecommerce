@@ -10,7 +10,6 @@ import Slide from '@mui/material/Slide';
 import { MyContext } from "../../App";
 
 
-
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });

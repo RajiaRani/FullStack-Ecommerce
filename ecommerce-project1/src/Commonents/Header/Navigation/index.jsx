@@ -4,6 +4,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { Link } from '@mui/material';
 import { GoHome } from "react-icons/go";
 import { useState } from 'react';
+import { MdKeyboardArrowRight } from "react-icons/md"
 
 export default function Navigation() {
     const [isSideNavbarOpen, setIsSideNavbarOpen] = useState(true);
@@ -23,7 +24,14 @@ export default function Navigation() {
                             </Button>
                             <div className={`sideNavbar ${isSideNavbarOpen===false ? "open" : " "}`}>
                             <ul>
-                                <li><Link to="/" className="sidebar-link"><Button>Women</Button> </Link></li>
+                                <li><Link to="/" className="sidebar-link"><Button>Women < MdKeyboardArrowRight className="ms-auto"/></Button> </Link>
+                                <div className="submenu ">
+                                        <Link to="/" className="sub-link"><Button>Women</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>men</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>kid</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>Women</Button> </Link>
+                                    </div>
+                                </li>
                                 <li><Link to="/" className="sidebar-link"><Button>Men</Button> </Link></li>
                                 <li><Link to="/" className="sidebar-link"><Button>Kids</Button> </Link></li>
                                 <li><Link to="/" className="sidebar-link"><Button>Beauty</Button> </Link></li>
