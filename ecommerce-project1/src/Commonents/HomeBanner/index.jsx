@@ -24,16 +24,16 @@ export default function HomeBanner() {
             <div className="homeBannerSection">
                 <Slider {...settings}>
                     <div className="item">
-                        <img src=" https://st4.depositphotos.com/6923920/41187/i/380/depositphotos_411877204-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src=" https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411877510-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
+                        <img src=" https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg" alt="bannerImage" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src="https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411877220-stock-photo-fashion-sale-banner-design-template.jpg " alt="bannerImage" className="w-100" />
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg" alt="bannerImage" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src="https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411876904-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg" alt="bannerImage" className="w-100" />
                     </div>
 
                 </Slider>

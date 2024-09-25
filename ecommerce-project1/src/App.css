@@ -63,15 +63,15 @@ nav .allCatTab{background-color: #2bbef9; padding:20px !important; border-radius
 nav .allCatTab *{color: #fff;}
 
 nav .allCatTabWrapper{position: relative !important;}
-nav .allCatTabWrapper .sideNavbar{position: absolute; top: 119%; left: 0; border: 1px solid rgba(0,0,0,0.1); width: 100%; height:100vh !important; padding: 15px 0px !important; 
+nav .allCatTabWrapper .sideNavbar{position: absolute; top: 119%; left: 0; border: 1px solid rgba(0,0,0,0.1); width: 100%; height:600px !important; padding: 15px 0px !important; 
 opacity: 0; height: 0px; transition: all 0.2s ease-in-out; visibility: hidden; z-index: 200; background-color: #fff; border-left: 1px solid rgba(0,0,0,0.5) !important;}
 nav .allCatTabWrapper .sideNavbar.open{height:auto; opacity: 1; visibility: inherit;}
 
 nav .allCatTabWrapper .sideNavbar ul{padding: 0px !important;}
 nav .allCatTabWrapper .sideNavbar ul li{list-style: none !important; width: 100%; padding: 0px 15px !important;}
-nav .allCatTabWrapper .sideNavbar ul li Button{width: 100% !important; color: #000; justify-content: flex-start !important; border-radius: 0px !important;}
+nav .allCatTabWrapper .sideNavbar ul li Button{width: 100% !important; color: rgba(0, 0, 0, 0.6); justify-content: flex-start !important; border-radius: 0px !important; font-size: 14px !important; text-transform: capitalize;}
 nav .allCatTabWrapper .sideNavbar ul li Button:hover{background:rgba(0,0,0,0.1) !important;}
-nav .allCatTabWrapper .sideNavbar ul li .submenu{position: absolute !important; left: 100% !important; background-color: #fff; min-width: 250px !important; width: 250px; height: 100vh; top: 0 !important; opacity: 0; visibility: hidden;
+nav .allCatTabWrapper .sideNavbar ul li .submenu{position: absolute !important; left: 100% !important; background-color: #fff; min-width: 250px !important; width: 250px; height:600px !important; top: 0 !important; opacity: 0; visibility: hidden;
 transition: all 0.2s ease-in-out; border-left: 1px solid rgba(0,0,0,0.5) !important; z-index: 200;}
 nav .allCatTabWrapper .sideNavbar ul li:hover .submenu{opacity: 1 !important; visibility: inherit !important; left: 100%;}
 
@@ -103,7 +103,8 @@ nav .navPart2  ul list svg{ font-size: 18px !important;}
 
 
 
-.homeBannerSection {position: relative; overflow: hidden;}
+.homeBannerSection {position: relative; overflow: hidden; width: 77% !important; margin-left:270px !important;}
+.homeBannerSection .item img{ height: 600px !important;}
 .homeBannerSection * {outline: none !important;}
 .slick-prev,
 .slick-next {position: absolute; top: 45%; z-index: 100; display: flex; align-items: center; justify-content: center; min-width: 40px !important;
@@ -119,8 +120,8 @@ nav .navPart2  ul list svg{ font-size: 18px !important;}
 
 
 
-.homeProducts{padding: 25px !important; width: 100% !important;}
-.homeProducts .banner{width: 100% !important; border-radius: 7px !important; overflow: hidden; height: 500px !important; }
+.homeProducts{padding: 20px  0px!important; width: 100% !important;}
+.homeProducts .banner{width: 100% !important; border-radius: 7px !important; overflow: hidden;  }
 .homeProducts .banner img{height: 500px !important; width: 100% !important;}
 .row-Container .View-All{ padding: 10px 30px !important; background-color: #fff; border: 1px solid rgba(0,0,0,0.1); 
 border-radius: 30px; color: #8f8b8b; font-weight: 600; text-transform: capitalize !important;}
@@ -128,4 +129,18 @@ border-radius: 30px; color: #8f8b8b; font-weight: 600; text-transform: capitaliz
 
 
 
-.product_row .productItem{ width: 100% !important; border: 1px solid rgba(0,0,0,0.1); height:auto!important;}
+.product_row .productItem{position: relative; width: 100% !important; border: 1px solid rgba(0,0,0,0.1); height:auto!important; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.productItem .info{padding-top: 15px ; padding-bottom: 50px; width: 200px !important; display: flex; flex-direction: column;}
+.productItem .info h4{font-size: 15px; font-weight: 600; }
+.imgWrapper img{width: 200px !important;  height: 150px; margin-top: 50px;}
+.productItem .info .oldPrice{font-size: 18px; font-weight: bold; color: rgba(0, 0, 0, 0.2); text-decoration: line-through;}
+.productItem .info .newPrice{font-size: 19px; font-weight: bold; }
+.badge{position: absolute !important; top: 20px; left: 20px ; display: inline-block; padding: 7px 10px; z-index: 100;}
+.bg-primary{background:#2bbef9 !important;}
+.productItem .actions{position: absolute; top: 20px; right:10px; display:flex; flex-direction: column; gap: 10px; z-index:1000;}
+.productItem .actions Button{min-width: 40px; height: 40px; width: 40px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); background: #fff; }
+.productItem .actions Button svg{color: #000; opacity: 0.7; font-size: 16px !important; pointer-events: none !important;}
+.productItem .actions Button:hover{background-color: #233a95 !important;}
+.productItem .actions Button:hover svg{color: #fff !important; font-weight:bold;}
+.productItem .imgWrapper{overflow: hidden;}
+.productItem .imgWrapper:hover .actions{ opacity: 1; right: 10px !important; }

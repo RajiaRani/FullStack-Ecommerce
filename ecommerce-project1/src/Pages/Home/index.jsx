@@ -5,28 +5,23 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper/modules";
 import 'swiper/css';
+import 'swiper/css/navigation'; // Import navigation styles
+import ProductItem from "../../Commonents/ProductItem";
+
 
 export default function Home() {
-    // var productSliderOptions = {
-    //     dots: true,
-    //     infinite: false,
-    //     speed: 500,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     arrows: true,
-    //     autoplay: true,
-    // };
 
     return (
-        <>
-            <HomeBanner />
 
+        <>
+          <div className="container">
+          <HomeBanner />
             <section className="homeProducts">
                 <div className="">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="banner">
-                                <img src=" https://st4.depositphotos.com/1350793/20189/i/600/depositphotos_201892078-stock-photo-summer-sale-with-happy-young.jpg" className="cursor" />
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor" />
                             </div>
                         </div>
                         <div className="col-md-9 row-Container">
@@ -42,43 +37,30 @@ export default function Home() {
                             </div>
 
 
-                            <div className="product_row w-100">
+                            <div className="product_row w-100 mt-4">
                                 <Swiper
                                     slidesPerView={4}
-                                    spaceBetween={30}
-                                    Navigation={{
-                                        clickable: true,
-                                    }}
+                                    spaceBetween={10}
+                                    pagination={{ clickable: true }}
+                                    navigation={true}
                                     modules={[Navigation]}
+                                    autoplay={true}
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                            <div className="imgWrapper">
-                                                <img src="https://cdn.stocksnap.io/img-thumbs/280h/baby-clothes_Q2NLOOVQBU.jpg" className="w-100" />
-                                            </div>
-                                        </div>
+                                       <ProductItem/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                            <div className="imgWrapper">
-                                                <img src="https://cdn.stocksnap.io/img-thumbs/280h/sneakers-jeans_BRDLQ22VO4.jpg" className="w-100" />
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                            <div className="imgWrapper">
-                                                <img src="https://cdn.stocksnap.io/img-thumbs/280h/sneakers-jeans_BRDLQ22VO4.jpg" className="w-100" />
-                                            </div>
-                                        </div>
+                                    <ProductItem/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                            <div className="imgWrapper">
-                                                <img src="https://cdn.stocksnap.io/img-thumbs/280h/sneakers-jeans_BRDLQ22VO4.jpg" className="w-100" />
-                                            </div>
-                                        </div>
+                                    <ProductItem/>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                    <ProductItem/>
                                     </SwiperSlide>
                                 </Swiper>
                             </div>
@@ -87,6 +69,7 @@ export default function Home() {
                 </div>
 
             </section>
+          </div>
         </>
     )
 };
