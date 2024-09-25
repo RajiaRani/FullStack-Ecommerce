@@ -32,7 +32,15 @@ export default function Navigation() {
                                         <Link to="/" className="sub-link"><Button>Women</Button> </Link>
                                     </div>
                                 </li>
-                                <li><Link to="/" className="sidebar-link"><Button>Men</Button> </Link></li>
+                                <li><Link to="/" className="sidebar-link"><Button>Men < MdKeyboardArrowRight className="ms-auto"/></Button> </Link>
+                                <div className="submenu">
+                                <Link to="/" className="sub-link"><Button>Shoe</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>Jackets</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>Watches</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>Mobiles</Button> </Link>
+                                        <Link to="/" className="sub-link"><Button>Laptops</Button> </Link>
+                                </div>
+                                </li>
                                 <li><Link to="/" className="sidebar-link"><Button>Kids</Button> </Link></li>
                                 <li><Link to="/" className="sidebar-link"><Button>Beauty</Button> </Link></li>
                                 <li><Link to="/" className="sidebar-link"><Button>Gerocery</Button> </Link></li>

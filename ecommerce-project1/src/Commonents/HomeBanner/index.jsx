@@ -2,6 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 
 export default function HomeBanner() {
@@ -19,16 +24,16 @@ export default function HomeBanner() {
             <div className="homeBannerSection">
                 <Slider {...settings}>
                     <div className="item">
-                        <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bannerImage" className="w-100" />
+                        <img src=" https://st4.depositphotos.com/6923920/41187/i/380/depositphotos_411877204-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bannerImage" className="w-100" />
+                        <img src=" https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411877510-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bannerImage" className="w-100" />
+                        <img src="https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411877220-stock-photo-fashion-sale-banner-design-template.jpg " alt="bannerImage" className="w-100" />
                     </div>
                     <div className="item">
-                        <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bannerImage" className="w-100" />
+                        <img src="https://st4.depositphotos.com/6923920/41187/i/600/depositphotos_411876904-stock-photo-fashion-sale-banner-design-template.jpg" alt="bannerImage" className="w-100" />
                     </div>
 
                 </Slider>

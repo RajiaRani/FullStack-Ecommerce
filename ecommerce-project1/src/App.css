@@ -13,7 +13,9 @@ body{
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
-
+.cursor{cursor: pointer;}
+.text-light{color: #8b8b8b !important;}
+.text-sm{font-size: 14px !important;}
 
 ::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
 ::-webkit-scrollbar-thumb{background-color: #ccc !important;}
@@ -67,10 +69,10 @@ nav .allCatTabWrapper .sideNavbar.open{height:auto; opacity: 1; visibility: inhe
 
 nav .allCatTabWrapper .sideNavbar ul{padding: 0px !important;}
 nav .allCatTabWrapper .sideNavbar ul li{list-style: none !important; width: 100%; padding: 0px 15px !important;}
-nav .allCatTabWrapper .sideNavbar ul li Button{width: 100% !important; color: #000; justify-content: flex-start !important;}
-nav .allCatTabWrapper .sideNavbar ul li Button:hover{background:transparent !important;}
+nav .allCatTabWrapper .sideNavbar ul li Button{width: 100% !important; color: #000; justify-content: flex-start !important; border-radius: 0px !important;}
+nav .allCatTabWrapper .sideNavbar ul li Button:hover{background:rgba(0,0,0,0.1) !important;}
 nav .allCatTabWrapper .sideNavbar ul li .submenu{position: absolute !important; left: 100% !important; background-color: #fff; min-width: 250px !important; width: 250px; height: 100vh; top: 0 !important; opacity: 0; visibility: hidden;
-transition: all 0.2s ease-in-out; border-left: 1px solid rgba(0,0,0,0.5) !important;}
+transition: all 0.2s ease-in-out; border-left: 1px solid rgba(0,0,0,0.5) !important; z-index: 200;}
 nav .allCatTabWrapper .sideNavbar ul li:hover .submenu{opacity: 1 !important; visibility: inherit !important; left: 100%;}
 
 
@@ -89,7 +91,9 @@ transition: all 0.3s ease-in-out;}
 nav .navPart2  ul .list-inline-item{position: relative !important;}
 nav .navPart2  ul li .submenu{ position: absolute; top:170% !important; left: 0 !important; display: flex; flex-direction: column; min-width: 200px !important; width: 200px !important; opacity: 0; visibility: hidden; transition: all 0.2s ease-in-out; background-color: #fff; z-index: 200;}
 nav .navPart2  ul li .submenu .sub-link{width: 100% !important; display: block !important; text-decoration: none;}
-nav .navPart2 ul li .submenu Button{display: block !important; width: 100% !important; text-align: start; border-radius: 0px !important; text-transform: capitalize !important; font-weight: 700; font-size: 19px; }
+nav .navPart2 ul li .submenu Button{display: block !important; width: 100% !important; text-align: start; border-radius:none !important; text-transform: capitalize !important; font-weight: 700; 
+  font-size: 19px;}
+
 
 nav .navPart2  ul li:hover .submenu{ opacity: 1; visibility:inherit; cursor: pointer; top:100% !important;}
 
@@ -97,16 +101,31 @@ nav .navPart2  ul .list-inline-item .link:hover{ background-color: #f0faff; colo
 nav .navPart2  ul list svg{ font-size: 18px !important;}
 
 
+
+
 .homeBannerSection {position: relative; overflow: hidden;}
 .homeBannerSection * {outline: none !important;}
-.homeBannerSection .slick-prev,
-.homeBannerSection .slick-next {position: absolute; top: 45%; z-index: 100; display: flex; align-items: center; justify-content: center; min-width: 40px !important;
-  width: 40px !important; height: 40px !important; border-radius: 50%; background-color: rgba(0, 0, 0, 0.7) !important; z-index: 200;}
+.slick-prev,
+.slick-next {position: absolute; top: 45%; z-index: 100; display: flex; align-items: center; justify-content: center; min-width: 40px !important;
+  width: 40px !important; height: 40px !important; border-radius: 50%; background-color: rgba(0, 0, 0, 0.5) !important; z-index: 200;}
 
-.homeBannerSection .slick-prev {left: 10px; /* Adjust as needed */}
+ .slick-prev {left:10px !important; /* Adjust as needed */}
 
-.homeBannerSection .slick-next { right: 10px; /* Adjust as needed */}
+ .slick-next { right:10px !important; /* Adjust as needed */}
 
-.homeBannerSection .slick-prev:before,
-.homeBannerSection .slick-next:before { color: white; font-size: 20px; /* Adjust size as needed */}
+ .slick-prev:before,
+.slick-next:before { color: white; font-size: 20px;}
 
+
+
+
+.homeProducts{padding: 25px !important; width: 100% !important;}
+.homeProducts .banner{width: 100% !important; border-radius: 7px !important; overflow: hidden; height: 500px !important; }
+.homeProducts .banner img{height: 500px !important; width: 100% !important;}
+.row-Container .View-All{ padding: 10px 30px !important; background-color: #fff; border: 1px solid rgba(0,0,0,0.1); 
+border-radius: 30px; color: #8f8b8b; font-weight: 600; text-transform: capitalize !important;}
+.row-Container .View-All svg{font-size: 24px !important;}
+
+
+
+.product_row .productItem{ width: 100% !important; border: 1px solid rgba(0,0,0,0.1); height:auto!important;}
