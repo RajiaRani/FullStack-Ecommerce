@@ -7,8 +7,7 @@ import HomeCat from "../../Commonents/HomeCat";
 import coupon from "../../assets/coupon.png";
 import { CiMail } from "react-icons/ci";
 import { Button } from "@mui/material";
-
-
+import Footer from "../../Commonents/Footer";
 
 export default function Home() {
    
@@ -39,7 +38,8 @@ export default function Home() {
                         </div>
                     </div>
             </section>
-            <br></br>
+           
+           <Footer/>
         </>
     )
 };
