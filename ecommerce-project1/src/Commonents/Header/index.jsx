@@ -1,6 +1,6 @@
 import "../../App.css";
 import {Link} from "react-router-dom";
-import logo from "../../../src/assets/logo.jpg";
+import logo from "../../../src/assets/logo.png";
 import CountryDropdown from "../CountryDropdown";
 import Button from '@mui/material/Button';
 import { FaUser } from "react-icons/fa";
@@ -26,7 +26,7 @@ export default function Header(){
             </div>
 
 
-            <header className="header m-0">
+            <header className="header mt-4 mb-3">
                 <div className="container">
 
                     <div className="row">

@@ -132,7 +132,7 @@ border-radius: 30px; color: #8f8b8b; font-weight: 600; text-transform: capitaliz
 .product_row .productItem{position: relative; width: 100% !important; border: 1px solid rgba(0,0,0,0.1); height:auto!important; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .productItem .info{padding-top: 15px ; padding-bottom: 50px; width: 200px !important; display: flex; flex-direction: column;}
 .productItem .info h4{font-size: 15px; font-weight: 600; }
-.imgWrapper img{width: 200px !important;  height: 150px; margin-top: 50px;}
+/* .imgWrapper img{width: 200px !important;  height: 150px; margin-top: 50px;} */
 .productItem .info .oldPrice{font-size: 18px; font-weight: bold; color: rgba(0, 0, 0, 0.2); text-decoration: line-through;}
 .productItem .info .newPrice{font-size: 19px; font-weight: bold; }
 .badge{position: absolute !important; top: 20px; left: 20px ; display: inline-block; padding: 7px 10px; z-index: 100;}
@@ -144,3 +144,26 @@ border-radius: 30px; color: #8f8b8b; font-weight: 600; text-transform: capitaliz
 .productItem .actions Button:hover svg{color: #fff !important; font-weight:bold;}
 .productItem .imgWrapper{overflow: hidden;}
 .productItem .imgWrapper:hover .actions{ opacity: 1; right: 10px !important; }
+.data2{display:grid !important; grid-template-rows: repeat(2,1fr); grid-template-columns: repeat(4,1fr);}
+
+.homeCat{padding: 35px 0px;}
+.homeCat .item img{ width:60%;  height: 100px;}
+.homeCat .item { display:flex !important; flex-direction: column !important; align-items: center !important; padding: 10px;}
+
+
+
+
+
+.newsLetterSection{ background-color: #233a95; width: 100% !important; height:auto !important; color: #fff;
+position: relative; overflow: hidden !important; padding: 50px 0px !important;}
+.newsLetterSection p{font-size: 18px; margin:10px 0px ;}
+.newsLetterSection h3{font-size: 35px; font-weight: bold;}
+.newsLetterSection p.text-light{color: #fff; opacity: 0.5; font-size: 15px;}
+.newsLetterSection .col-md-6{position:static !important; padding: 40px;}
+.newsLetterSection img{position: absolute; bottom: 0px; right:300px;}
+
+.newsLetterSection form{width: 100%; height:70px; padding: 10px; background-color: #fff; position: relative; border-radius: 5px !important;}
+.newsLetterSection form svg{position: absolute; top: 22px; left: 10px; color:rgba(0, 0, 0, 0.8); font-size: 25px; opacity: 0.3;}
+.newsLetterSection form  input{width: 100%; height: 50px; background-color: #fff; outline: none !important; border: 0px !important; 
+padding-left:40px !important; padding-right: 200px !important;}
+.newsLetterSection form Button{position: absolute; top: 8px; right: 7px; background-color: #233a95; color: #fff; font-size: 16px; padding: 13px 25px !important;}
