@@ -162,8 +162,29 @@ position: relative; overflow: hidden !important; padding: 50px 0px !important;}
 .newsLetterSection .col-md-6{position:static !important; padding: 40px;}
 .newsLetterSection img{position: absolute; bottom: 0px; right:300px;}
 
-.newsLetterSection form{width: 100%; height:70px; padding: 10px; background-color: #fff; position: relative; border-radius: 5px !important;}
+.newsLetterSection form{width: 100%; height:70px; padding: 10px; background-color: #fff; position: relative; border-radius: 5px !important;
+}
 .newsLetterSection form svg{position: absolute; top: 22px; left: 10px; color:rgba(0, 0, 0, 0.8); font-size: 25px; opacity: 0.3;}
 .newsLetterSection form  input{width: 100%; height: 50px; background-color: #fff; outline: none !important; border: 0px !important; 
 padding-left:40px !important; padding-right: 200px !important;}
 .newsLetterSection form Button{position: absolute; top: 8px; right: 7px; background-color: #233a95; color: #fff; font-size: 16px; padding: 13px 25px !important;}
+
+
+footer{ width: 100% !important; height: 200px !important; padding: 35px 0px; background-color: #fff;}
+footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20px;}
+footer .topInfo .col{padding: 15px 15px; display: flex; align-items: center; border-right: 1px solid rgba(0, 0, 0, 0.2); }
+footer .topInfo .col:last-child{border-right: 0px !important;}
+footer .topInfo .col svg{font-size: 26px; margin-right:7px;}
+footer .topInfo .col span{ font-size: 15px;}
+footer .linksWrap{ }
+footer .linksWrap h5{font-size: 18px;  margin-bottom:10px; }
+footer .linksWrap ul{padding: 0px !important;}
+footer .linksWrap ul li{list-style: none; margin-bottom:10px; padding: 0px !important;}
+footer ul li a{ text-decoration: none !important; color:#71778e; transition: all 0.2s ease-in-out; font-size: 14px;}
+footer ul li a:hover{color: #2bbef9; cursor: pointer;}
+
+footer .copyright ul {padding: 0px !important;}
+footer .copyright ul li a{display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out;}
+footer .copyright ul li  a svg{font-size: 20px; color: rgba(0, 0, 0, 0.8);}
+footer .copyright ul li a:hover{background-color: #2bbef9;}
+footer .copyright ul li a:hover svg{color: #fff;}

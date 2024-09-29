@@ -5,7 +5,7 @@ import Header from './Commonents/Header';
 import { useEffect, useState, createContext } from 'react';
 import axios from 'axios';
 import Home from './Pages/Home';
-
+import Footer from '../src/Commonents/Footer/index.jsx';
 
 // 1st Create the MyContext
 const MyContext = createContext();
@@ -42,6 +42,7 @@ selectedCountry
    <Routes>
     {/* <Route path="/" exact={true} element={<Home/>}/>  */}
    </Routes>
+   <Footer/>
    </MyContext.Provider>
    </BrowserRouter>
 
