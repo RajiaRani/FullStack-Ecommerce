@@ -2,15 +2,27 @@ import { SlSizeFullscreen } from "react-icons/sl";
 import Rating from '@mui/material/Rating';//Material UI
 import { Button } from "@mui/material";
 import { CiHeart } from "react-icons/ci";
+import ProductModal from "../ProductModeal";
+import { useState } from "react";
 
 export default function ProductItem({title,discount,image,newPrice,oldPrice}) {
+    const[isOpenProductModal, setisOpenProductModal] = useState(false);
+     const viewProductDetails=(id) => {
+        setisOpenProductModal(true);
+     }
+
+     const closeProductModal=() => {
+        setisOpenProductModal(false);
+     }
+
     return (
+       <>
         <div className="item productItem cursor">
             <div className="imgWrapper">
                 <img src={image} className="w-100" alt={title}/>
                 <span className="badge bg-primary">{discount}</span>
                 <div className="actions">
-                    <Button><SlSizeFullscreen/></Button>
+                    <Button onClick={() => viewProductDetails()}><SlSizeFullscreen/></Button>
                     <Button><CiHeart style={{fontSize:"20px"}} /></Button>
                 </div>
             </div>
@@ -24,5 +36,10 @@ export default function ProductItem({title,discount,image,newPrice,oldPrice}) {
                 </div>
             </div>
         </div>
+        {
+            isOpenProductModal === true && <ProductModal closeProductModal = {closeProductModal} /> 
+        }
+
+       </>
     );
 }

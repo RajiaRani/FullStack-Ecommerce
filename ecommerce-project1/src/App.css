@@ -47,7 +47,7 @@ body{
 color: rgba(0,0,0,1.0); padding:18px !important;}
 .locationModal .countryList li Button:hover{background-color: #f1f1f1 !important;}
 .locationModal .countryList li Button.active{background-color: #efecec!important;}
-.locationModal .close_{position: absolute; top:2px !important; right:5px !important; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; color: #ea2b0f !important;}
+.locationModal .close_{position: absolute !important; top:2px !important; right:5px !important; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; color: #ea2b0f !important;}
 .locationModal .close_ svg{font-size: 22px !important;}
 
 
@@ -187,3 +187,20 @@ footer .copyright ul li a{display: flex; align-items: center; justify-content: c
 footer .copyright ul li  a svg{font-size: 20px; color: rgba(0, 0, 0, 0.8);}
 footer .copyright ul li a:hover{background-color: #2bbef9;}
 footer .copyright ul li a:hover svg{color: #fff;}
+
+
+
+
+.productModal .MuiPaper-elevation{ padding:30px !important; position: relative !important; max-width:1000px !important;  width: 1000px !important;} 
+.productModal .close_{ position: absolute !important; right: 0 !important; max-width: 30px; width: 30px;  max-height: 30px; height: 30px; border-radius: 50%; };
+
+.productZoom{width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); padding: 0px; overflow: hidden; border-radius: 15px; }
+.zoomSliderBig{width: 100% !important;}
+.zoomSlider{padding-top: 30px;}
+.zoomSlider .slick-slide{padding-right: 20px !important;}
+.zoomSlider *{outline: none !important;}
+.zoomSlider .item{border: 2px solid transparent !important; overflow: hidden; border-radius: 15px; cursor: pointer;}
+.zoomSlider .slick-current .item{border: 2px solid #3bb77e !important;}
+.zoomSlider .slick-arrow{top: 55% !important; zoom: 80% !important;}
+.zoomSlider .slick-arrow.slick-next{right: -2% !important;}
+.zoomSlider .slick-arrow.slick-prev{left: -5% !important;}
