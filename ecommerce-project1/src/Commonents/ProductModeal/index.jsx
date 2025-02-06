@@ -6,7 +6,8 @@ import Slider from "react-slick";
 import banner from "../../assets/banner1.png";
 import { useRef } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
-import 'react-inner-image-zoom/lib/style.css';
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+
 
 
 
@@ -47,6 +48,20 @@ export default function ProductModal(props) {
                             </div>
                         </Slider>
                     </div>
+
+                    <Slider {...settings2} className="zoomSlider" ref={zoomSlider}>
+                        {
+                            currentProduct.productImages !== undefined &&
+                            currentProduct.productImages.map((imgUrl, index) => {
+                                return(
+                                    <div className="item">
+                                        <img src={`{imgUrl}?im=Resize=($smallImageSize[0], $(smallImageSize[1]))`} className="w-100"  onClick={() => goto(index)}/>
+                                    </div>
+                                )
+                            })
+                        }
+
+                    </Slider>
                 </div>
                 <div className="col-md-7">
                     {/* Add additional product details here */}
