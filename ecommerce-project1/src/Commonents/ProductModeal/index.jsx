@@ -50,7 +50,10 @@ export default function ProductModal(props) {
                     </div>
 
                     <Slider {...settings2} className="zoomSlider" ref={zoomSlider}>
-                        {
+                        <div className="item">
+                            <img src={`{imgUrl}?im=Resize=($smallImageSize[0]`}
+                        </div>
+                        {/* {
                             currentProduct.productImages !== undefined &&
                             currentProduct.productImages.map((imgUrl, index) => {
                                 return(
@@ -59,7 +62,7 @@ export default function ProductModal(props) {
                                     </div>
                                 )
                             })
-                        }
+                        } */}
 
                     </Slider>
                 </div>
